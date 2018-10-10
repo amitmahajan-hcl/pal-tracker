@@ -13,5 +13,5 @@ public interface TimeEntryRepository {
 
     TimeEntry update(long eq, TimeEntry any);
 
-    ResponseEntity<TimeEntry> delete(long l);
+    void delete(long l);
 }

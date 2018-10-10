@@ -40,8 +40,7 @@ public class InMemoryTimeEntryRepository implements TimeEntryRepository {
     }
 
     @Override
-    public ResponseEntity<TimeEntry> delete(long l) {
+    public void delete(long l) {
         this.timeEntries = new HashMap();
-        return null;
     }
 }

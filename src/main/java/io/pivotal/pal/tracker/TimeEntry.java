@@ -44,6 +44,7 @@ public class TimeEntry {
         return userId;
     }
 
+
     public LocalDate getDate() {
         return date;
     }
@@ -67,5 +68,16 @@ public class TimeEntry {
     @Override
     public int hashCode() {
         return Objects.hash(id, projectId, userId, date, hours);
+    }
+
+    @Override
+    public String toString() {
+        return "TimeEntry{" +
+                "id=" + id +
+                ", projectId=" + projectId +
+                ", userId=" + userId +
+                ", date=" + date +
+                ", hours=" + hours +
+                '}';
     }
 }
