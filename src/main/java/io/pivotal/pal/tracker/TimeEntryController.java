@@ -31,8 +31,6 @@ public class TimeEntryController {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
         return new ResponseEntity<>(timeEntry, HttpStatus.OK);
-
-
     }
 
     @GetMapping
