@@ -43,9 +43,9 @@ public class TimeEntryController {
     public ResponseEntity update(@PathVariable long id, @RequestBody TimeEntry expected) {
         if (expected.getDate() == null) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-        } else {
-            return new ResponseEntity<>(timeEntryRepository.update(id, expected), HttpStatus.OK);
         }
+        return new ResponseEntity<>(timeEntryRepository.update(id, expected), HttpStatus.OK);
+
 
     }
 
